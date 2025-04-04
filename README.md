@@ -1,98 +1,200 @@
-# Feb 2025 Cohort Hackathon 1: Portfolio Challenge 🚀  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My  Portfolio</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #ffe6f7, #e0f7fa);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            color: #333;
+        }
 
-Welcome to the **PLP Academy Portfolio Challenge!** 🎉  
+        header {
+            text-align: center;
+            padding: 2em 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+            width: 80%;
+        }
 
-This README.md file provides all the details you need to successfully complete and submit your project. Let’s get started! 💻  
+        header h1 {
+            color: #ff69b4; /* Hot pink */
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
 
----  
+        section {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2em;
+            margin-bottom: 2em;
+            width: 80%;
+            text-align: center;
+        }
 
-## 🌟 Project Overview  
-Your challenge is to build a **personal portfolio website** that showcases your skills, background, and achievements. Your portfolio should include:  
+        section h2 {
+            color: #8a2be2; /* Violet */
+            border-bottom: 2px dashed #ddd;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
 
-1. **Programming Languages**: List the programming languages you’re proficient in.  
-2. **About Section**: Share a brief introduction about yourself, your passion, and what drives you.  
-3. **Educational Background**: Provide details of your education and include a downloadable CV.  
-4. **Interests**: Share what excites you about tech and your professional interests.  
-5. **Projects**: Include links to your projects with brief descriptions.  
-6. **Contact Form**: Make it easy for collaborators or employers to reach you.  
+        .project {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5em;
+            margin: 1em 0;
+            text-align: left;
+        }
 
----  
+        .project h3 {
+            color: #00ced1; /* Dark turquoise */
+        }
 
-## 🛠️ Guidelines  
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-- **Skills**: Build your portfolio using HTML and CSS. You’re free to incorporate additional technologies if you wish.  
-- **Individual Work**: This is a solo challenge—showcase your personal skills and creativity.  
-- **Reference Material**: For additional details and helpful information, refer to [this document](https://docs.google.com/document/d/1v-F-tXa1dwV2w5oMkM2QzAuoFoQYZlOEuT5qeRKDTPA/edit?usp=sharing).  
-- **Submission**: Push your project to a **public GitHub repository** and complete the submission form.  
+        li {
+            margin-bottom: 0.5em;
+        }
 
----  
+        a {
+            color: #ff1493; /* Deep pink */
+            text-decoration: none;
+        }
 
-## 👥 Peer Group Collaboration  
+        a:hover {
+            text-decoration: underline;
+        }
 
-To foster teamwork and ensure success for everyone, participants will be required to collaborate with their **peer groups**.  
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
 
-### Peer Group Structure:  
-- **Support**: Collaborate with your group members, share ideas, and troubleshoot issues together.  
-- **Leadership**: Each group's **peer group leader** will be responsible for guiding members and ensuring timely submissions.  
-- **Recognition**: Peer groups where all members successfully submit their portfolios by the deadline will receive **special recognition** during the Award Ceremony.  
+        label {
+            margin-bottom: 0.5em;
+            text-align: left;
+        }
 
-**Benefits of Peer Groups:**  
-- Get feedback on your portfolio before submission.  
-- Gain insights from your peers’ experiences.  
-- Celebrate success together as a team!  
+        input, textarea {
+            padding: 0.8em;
+            margin-bottom: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
 
----  
+        button {
+            background-color: #9370db; /* Medium purple */
+            color: white;
+            padding: 1em 1.5em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-## 📅 Key Dates  
+        button:hover {
+            background-color: #800080; /* Purple */
+        }
 
-**Start Date**: Mar 31st, 2025, 8:00 AM EAT
-**End Date**: April 4th, 2025, 8:00 AM EAT
-**Award Ceremony**: April 11th, 2024, 6:30 PM EAT  
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin-top: 2em;
+        }
 
----  
+        img.profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1em;
+            border: 5px solid #ffb6c1; /* Light pink border */
+        }
 
-## 💼 Example Portfolio Sections  
+    </style>
+</head>
+<body>
 
-### 📝 About Me  
-Hi! I’m [Your Name], a passionate web developer with a love for creating functional and beautiful web experiences.  
+    <header>
+        <img src="port.jpg" alt="C:\Users\PURITY\Desktop\HTML" class="profile">
+        <h1>WINNIE PURITY's PORTFOLIO!</h1>
+    </header>
 
-### 🎓 Educational Background  
-I hold a degree in [Your Degree] from [Your University].  
-**[Download My CV](link-to-your-cv)**  
+    <section id="about">
+        <h2>About Me! 💖</h2>
+        <p>Hi there! I'm winnie purity, a super passionate web developer who loves creating adorable and functional websites. I believe in making the internet a cuter place, one line of code at a time! 🌟</p>
+        <p>I am a student taking BSC.ICT from JOOUST.</p>
+        <a href="https://drive.google.com/file/d/1qlQ0bmZ2if5cXSo-8wMBJP7aXWSRjrgS/view?usp=drivesdk" download>Download My CV 🐾</a>
+        <h2>My Interests! 🌈</h2>
+        <ul>
+            <li>✨ Web Development (of course!)</li>
+            <li>🎨 Creative Design</li>
+            <li>🚀 Learning new tech!</li>
+            <li>🎮 Video Games</li>
+            <li>📚 Reading Fantasy</li>
+            <li>✨coding</li>
+        </ul>
+    </section>
 
-### 💡 Interests  
-- **Web Development**: Exploring modern frameworks and best practices.  
-- **Tech Innovations**: Keeping up with emerging trends in technology.  
+    <section id="projects">
+        <h2>My Cute Projects! 🧸</h2>
+        <div class="project">
+            <h3>Project 1: QRA class attendance system</h3>
+            <p>this is all about quick class attendance system. this system leverage qr codes to stream 
+                line attendance recording
+            </p>
+            <a href="https://drive.google.com/file/d/1qlQ0bmZ2if5cXSo-8wMBJP7aXWSRjrgS/view?usp=drivesdk">Check it out! 🎀</a> <p>when am done with it</p>
+        </div>
+        <div class="project">
+            <h3>Project 2:AI tutoring powered system</h3>
+            <p>is an educational platform or tool that leverage ai to provide personalised learning experiences 
+                and support to students.</p>
+            <a href="https://drive.google.com/file/d/1qlQ0bmZ2if5cXSo-8wMBJP7aXWSRjrgS/view?usp=drivesdk">See the magic! 🪄</a>
+        </div>
+    </section>
 
-### 🛠️ Projects  
-1. **[Project 1](link-to-project1)**: A brief description of your project.  
-2. **[Project 2](link-to-project2)**: Another brief description.  
+    <section id="contact">
+        <h2>Let's Chat! 💌</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-### 📬 Contact Me  
-Feel free to reach out! [Contact Form](link-to-your-contact-form)  
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
----  
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-## 📁 Submission Instructions  
+            <button type="submit">Send Message! 💖</button>
+        </form>
+    </section>
 
-1. **Create Your Portfolio**: Build a complete portfolio website with all the required sections.  
-2. **Push to GitHub**: Upload your project to a **public GitHub repository**.  
-3. **Update README**: Ensure your README.md includes details about your portfolio.  
-4. **Submit Your Project**: Use [this form](https://forms.gle/7YStNrZ88iAzQB819) to share your GitHub repo.  
+    <footer>
+        <p>&copy; [2025] [winnie purity// puritywinnie@gmail.com] - Made with lots of love! ✨</p>
+    </footer>
 
----  
+</body>
+</html>
 
-## 🏆 Evaluation Criteria  
 
-- **Creativity and Ingenuity (20%)**: Original ideas and standout features.  
-- **Code Quality (20%)**: Clean, readable, and efficient code.  
-- **Documentation (15%)**: Informative README and clear code comments.  
-- **Deployment (15%)**: Successfully hosted on a platform like GitHub Pages or Netlify.  
-- **Development Process (15%)**: Effective collaboration and project management.  
-- **Technology Stack (15%)**: Usage of responsive, visually appealing tools.
-- ## 💡 Bonus Points: Individuals whose group members successfully submit a project will earn extra points for their contribution to teamwork and collaboration! 🎯
 
----  
-
-We’re excited to see your unique creations! ✨  
-Happy coding, and good luck! 🍀  
